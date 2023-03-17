@@ -1,8 +1,5 @@
-#!/usr/bin/env python3
-
 import unittest
 from str_to_sorted_list import str_to_sorted_list
-
 
 class Test_str_to_sorted_list(unittest.TestCase):
 
@@ -18,12 +15,12 @@ class Test_str_to_sorted_list(unittest.TestCase):
         result = None
         self.assertEqual(str_to_sorted_list(sentence, n), result)
 
-
     def test_n_neg(self):
         n = -1
         sentence = "baz bar foo foo zblah zblah zblah baz toto bar"
         result = None
         self.assertEqual(str_to_sorted_list(sentence, n), result)
+
 
 if __name__ == '__main__':
     unittest.main()
